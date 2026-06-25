@@ -13,11 +13,11 @@ function EnvelopeReveal({ onRevealStart, children }) {
   }, [isOpen, onRevealStart]);
 
   return (
-    <div className="relative flex min-h-screen w-full flex-col items-center justify-center overflow-visible py-20 px-4">
+    <div className="relative flex min-h-dvh w-full flex-col items-center justify-center overflow-visible py-20 px-4">
       <div
         className={`perspective-1000 relative mx-auto my-12 aspect-[4/3] w-full max-w-[560px] transition-all duration-700 ease-in-out ${
           isOpen
-            ? "opacity-0 scale-95 pointer-events-none absolute"
+            ? "opacity-0 scale-95 pointer-events-none invisible absolute"
             : "opacity-100 scale-100 pointer-events-auto"
         }`}
       >

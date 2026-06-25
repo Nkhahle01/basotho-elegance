@@ -15,7 +15,7 @@ function App() {
   }, []);
 
   return (
-    <div className="relative w-full min-h-screen overflow-visible bg-primary">
+    <div className="relative w-full min-h-dvh overflow-visible bg-[#0B132B]">
       <ParticleCanvas burstActive={particleBurst} />
 
       <main className="relative z-10 w-full overflow-visible">
@@ -25,8 +25,8 @@ function App() {
       <section
         className={
           isEnvelopeOpen
-            ? "opacity-100 h-auto visible overflow-visible pointer-events-auto transition-all duration-1000"
-            : "opacity-0 h-0 invisible overflow-hidden pointer-events-none transition-all duration-1000"
+            ? "relative w-full min-h-dvh bg-[#0B132B] opacity-100 h-auto visible overflow-visible pointer-events-auto transition-all duration-1000"
+            : "relative w-full min-h-dvh bg-[#0B132B] opacity-0 h-0 invisible overflow-hidden pointer-events-none transition-all duration-1000"
         }
       >
         <AboutCelebrant />
