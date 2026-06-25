@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+@config '../tailwind.config.js';
+
+@layer base {
+  body {
+    @apply bg-primary font-sans text-accent antialiased;
+  }
+}
+
+@layer utilities {
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+
+  .envelope-top-flap-closed {
+    transform: rotateX(0deg);
+    opacity: 1;
+  }
+
+  .envelope-top-flap-open {
+    transform: rotateX(180deg) translateY(-100%);
+    opacity: 0;
+  }
+}
